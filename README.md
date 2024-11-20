@@ -15,7 +15,9 @@
   - Bill pay
   - Update contact info
   - Logout
-- Reports
+- Report Configurations
+- Running Test
+- Viewing Report
 
 ## About Project <a id="abt"></a>
 
@@ -81,11 +83,12 @@ Test scripts developed for the following modules,
   - Update contact info
   - Logout
 
-## Reports <a id="report"></a>
+## Report Configurations <a id="report"></a>
 
 To Enable reports and get evidences like screenshot or videos, followed below steps
 
- 1. Install mochawesome for reports with the commands `npm install cypress-mochawesome-reporter --save -dev`
+ 1. Install mochawesome for reports with the commands
+ 2. ```npm install cypress-mochawesome-reporter --save -dev```
 
  3. In 'cypress.config.ts' , under 'setupNodeEvents(on, config)' add below commands,
 
@@ -107,3 +110,15 @@ To Enable reports and get evidences like screenshot or videos, followed below st
       //add commands
         }
     ```
+
+## Running Test and Viewing Results
+
+To run the complete tests in one go, open a terminal in project folder and execute below command
+	```npx cypress run```
+
+## Viewing Reports
+
+To view the reports, refresh the project folder in expolorer, test results will be updated to project folder
+
+ 1. go to 'cypress > reports' folder
+ 2. open the index.html file in web browser.
